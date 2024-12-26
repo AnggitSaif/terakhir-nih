@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <style>
+      section {
+        padding: 2rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="https://via.placeholder.com/50" alt="Logo">
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="#home" class="navbar-item">Home</a>
+          <a href="#about" class="navbar-item">About</a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">Layanan</a>
+            <div class="navbar-dropdown">
+              <a href="#pendaftaran" class="navbar-item">Pendaftaran Anggota</a>
+              <a href="#informasi-layanan" class="navbar-item">Informasi Layanan</a>
+            </div>
+          </div>
+
+          <a href="#koleksi" class="navbar-item">Koleksi</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero is-primary is-fullheight-with-navbar" style="background-color: aquamarine;">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-size-1 has-text-weight-bold has-text-white" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
+            Selamat Datang
+          </h1>
+          <h2 class="subtitle has-text-white" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.6);">
+            Di Perpustakaan Kami
+          </h2>
+          <a class="button is-light is-large" style="margin-top: 1.5rem; box-shadow: 2px 2px 5px rgba(0,0,0,0.4);" href="#about">
+            Jelajahi Sekarang
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="title">Tentang Kami</h2>
+        <p>
+          Perpustakaan kami adalah pusat literasi modern yang menyediakan koleksi buku fisik dan digital, fasilitas ruang baca nyaman, serta layanan edukasi untuk mendukung masyarakat dalam mengeksplorasi pengetahuan dan memperluas wawasan.
+        </p>
+      </div>
+    </section>
+    
+
+    <!-- Layanan Section -->
+   <!-- Layanan Section -->
+<section id="pendaftaran" class="section">
+  <div class="container">
+    <h2 class="title">Pendaftaran Anggota</h2>
+    <p>Informasi mengenai pendaftaran anggota dapat ditemukan di sini.</p>
+
+    <!-- Formulir Pendaftaran -->
+    <form id="form" class="mt-4" method="POST">
+      <div class="field">
+        <label class="label">Nama</label>
+        <div class="control">
+          <input class="input" type="name" placeholder="Nama" name="Nama" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Kelas</label>
+        <div class="control">
+          <input class="input" type="number" placeholder="Kelas" name="Kelas" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">NIS</label>
+        <div class="control">
+          <input class="input" type="number" placeholder="NIS" name="NIS" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Alamat</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Alamat" name="Alamat" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Telepon</label>
+        <div class="control">
+          <input class="input" type="number" placeholder="Telepon" name="Telepon" />
+        </div>
+      </div>
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-primary" type="submit" id="submit-button">
+            Sign Up
+          </button>
+        </div>
+        <div class="control">
+          <button class="button is-danger">Cancel</button>
+        </div>
+      </div>
+    </form>
+
+    <div
+      id="message"
+      style="
+        display: none;
+        margin: 20px;
+        font-weight: bold;
+        color: green;
+        padding: 8px;
+        background-color: beige;
+        border-radius: 4px;
+        border-color: aquamarine;
+      "
+    ></div>
+  </div>
+</section>
+
+<section id="informasi-layanan" class="section">
+  <div class="container">
+    <h2 class="title">Informasi Layanan</h2>
+    <p>Berikut adalah layanan yang kami sediakan untuk mendukung kegiatan literasi Anda:</p>
+    <ul>
+      <li><strong>Peminjaman Buku:</strong> Pinjam hingga 3 buku selama 14 hari. (Senin - Sabtu, 08:00 - 16:00)</li>
+      <li><strong>Pengembalian Buku:</strong> Loket pengembalian atau dropbox otomatis. (Senin - Sabtu, 08:00 - 16:00)</li>
+      <li><strong>Keanggotaan:</strong> Gratis untuk pelajar, Rp 50.000/tahun untuk umum.</li>
+      <li><strong>E-Library:</strong> Akses ribuan e-book dan jurnal digital 24/7.</li>
+      <li><strong>Ruang Baca:</strong> Ruang baca nyaman dan tenang. (Senin - Sabtu, 08:00 - 18:00)</li>
+      <li><strong>Konsultasi Penelitian:</strong> Konsultasi dengan pustakawan profesional. (By appointment)</li>
+    </ul>
+    <p class="mt-5">
+      Untuk informasi lebih lanjut, hubungi kami melalui email <strong>info@perpustakaan.com</strong> atau telepon di <strong>+62-123-456-7890</strong>.
+    </p>
+  </div>
+</section>
+
+
+    <!-- Koleksi Section -->
+    <section id="koleksi" class="section">
+      <div class="container">
+        <h2 class="title">Koleksi</h2>
+        <ul>
+          <li>Buku Fiksi</li>
+          <li>Buku Non-Fiksi</li>
+          <li>Jurnal Ilmiah</li>
+          <li>E-Book</li>
+          <li>Koleksi Referensi</li>
+          <li>Majalah dan Surat Kabar</li>
+        </ul>
+      </div>
+    </section>
+    
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Perpustakaan</strong> oleh <a href="#">Pria Misterius</a>. <br />
+          Alamat: Jl. Contoh No. 123, Kolam Ikan | Telepon: +62-123-456-7890 <br />
+          Email: info@perpustakaan.com <br />
+          <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </p>
+      </div>
+    </footer>
+    
+
+    <script>
+      document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+        document.getElementById("message").textContent = "Submitting..";
+        document.getElementById("message").style.display = "block";
+        document.getElementById("submit-button").disabled = true;
+
+        // Collect the form data
+        var formData = new FormData(this);
+        var keyValuePairs = [];
+        for (var pair of formData.entries()) {
+          keyValuePairs.push(pair[0] + "=" + pair[1]);
+        }
+
+        var formDataString = keyValuePairs.join("&");
+
+        // Send a POST request to your Google Apps Script
+        fetch(
+          "https://script.google.com/macros/s/AKfycby6zRXOkgRSb9eEru5WysuUNZORP12tIst9a1lxCCIA4KW_fgvZzF-zYNycdGoPGLok4Q/exec",
+          {
+            redirect: "follow",
+            method: "POST",
+            body: formDataString,
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8",
+            },
+          }
+        )
+          .then(function (response) {
+            // Check if the request was successful
+            if (response) {
+              return response; // Assuming your script returns JSON response
+            } else {
+              throw new Error("Failed to submit the form.");
+            }
+          })
+          .then(function (data) {
+            // Display a success message
+            document.getElementById("message").textContent =
+              "Data submitted successfully!";
+            document.getElementById("message").style.display = "block";
+            document.getElementById("message").style.backgroundColor = "green";
+            document.getElementById("message").style.color = "beige";
+            document.getElementById("submit-button").disabled = false;
+            document.getElementById("form").reset();
+
+            setTimeout(function () {
+              document.getElementById("message").textContent = "";
+              document.getElementById("message").style.display = "none";
+            }, 2600);
+          })
+          .catch(function (error) {
+            // Handle errors, you can display an error message here
+            console.error(error);
+            document.getElementById("message").textContent =
+              "An error occurred while submitting the form.";
+            document.getElementById("message").style.display = "block";
+          });
+      });
+    </script>
+  </body>
+</html>
